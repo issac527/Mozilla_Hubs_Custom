@@ -64,3 +64,8 @@ Mozilla and Hubs believe that privacy is fundamental to a healthy internet. Read
 ## License
 
 Hubs is licensed with the [Mozilla Public License 2.0](./LICENSE)
+
+## 커스텀 정보
+
+* 한글화 진행 중
+* UserName 정규화식 수정(한글 지원)
