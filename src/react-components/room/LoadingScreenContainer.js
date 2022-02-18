@@ -23,29 +23,29 @@ export function LoadingScreenContainer({ onLoaded, scene }) {
   const infoMessages = useMemo(
     () => [
       {
-        heading: intl.formatMessage({ id: "loading-screen.heading.tip", defaultMessage: "Tip:" }),
+        heading: intl.formatMessage({ id: "loading-screen.heading.tip", defaultMessage: "도움말 :" }),
         message: intl.formatMessage({
           id: "loading-screen.message.keyboard-controls",
-          defaultMessage: "Press the Q & E keys to turn left and right."
+          defaultMessage: "Q(left) & E(right) 키를 사용하여 회전을 할 수 있습니다!"
         })
-      },
-      {
-        heading: intl.formatMessage({ id: "loading-screen.heading.whats-new", defaultMessage: "What's New?" }),
-        message: intl.formatMessage(
-          {
-            id: "loading-screen.message.whats-new",
-            defaultMessage: "You can now set the default locale in your preferences. <a>Read More</a>"
-          },
-          {
-            // eslint-disable-next-line react/display-name
-            a: chunks => (
-              <a href="/whats-new" target="_blank">
-                {chunks}
-              </a>
-            )
-          }
-        )
       }
+      // {
+      //   heading: intl.formatMessage({ id: "loading-screen.heading.whats-new", defaultMessage: "새 소식" }),
+      //   message: intl.formatMessage(
+      //     {
+      //       id: "loading-screen.message.whats-new",
+      //       defaultMessage: "새 소식을 확인하러 가시겠습니까? <a>바로 가기</a>"
+      //     },
+      //     {
+      //       // eslint-disable-next-line react/display-name
+      //       a: chunks => (
+      //         <a href="/whats-new" target="_blank">
+      //           {chunks}
+      //         </a>
+      //       )
+      //     }
+      //   )
+      // }
     ],
     [intl]
   );

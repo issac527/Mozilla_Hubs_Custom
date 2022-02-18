@@ -87,7 +87,7 @@
   "avatar-url-modal.custom-avatar-docs-link": "Custom 아바타 더 알아보기...",
 
   "chat-sidebar-container.input-placeholder.empty-room": "대화방에 아무도 없습니다.",
-  "chat-sidebar-container.input-placeholder.empty-room-bot": "{discordChannels} 메시지 보내기",
+  "chat-sidebar-container.input-placeholder.empty-room-bot": "{discordChannels} 메시지 보내기...",
   "chat-sidebar-container.input-placeholder.occupants": "{occupantCount, plural, one {Envoyer un message à un autre...} other {Envoyer un message aux {occupantCount} autres...} }",
   "chat-sidebar-container.input-placeholder.occupants-and-bot": "{occupantCount, plural, one {Envoyer un message à un autre et {discordChannels}...} other {Envoyer un message aux {occupantCount} autres et {discordChannels}...} }",
 
@@ -332,13 +332,13 @@
 
   "place-popover.title" : "기능",
 
-  "place-popover.item-type.pen" : "Pen",
-  "place-popover.item-type.camera" : "Camera",
+  "place-popover.item-type.pen" : "그리기",
+  "place-popover.item-type.camera" : "카메라",
   "place-popover.item-type.gif" : "GIF",
   "place-popover.item-type.model" : "3D Model",
   "place-popover.item-type.avatar" : "Avatar",
   "place-popover.item-type.scene" : "Scene",
-  "place-popover.item-type.upload" :"Upload",
+  "place-popover.item-type.upload" :"불러오기",
 
   "reaction-popover.title" : "이모티콘",
 
@@ -355,9 +355,19 @@
   "exited-room-screen.closed-room-tos" : "방장이 방을 닫았거나, <toslink>이용 약관</toslink>을 위반했다는 보고를 받음.",
   "exited-room-screen.contact-us" : "문제가 있을 경우 {contactEmail}로 문의 주세요.",
   "exited-room-screen.source-link" : "서버를 자체적으로 실행하려면 <a>GitHub</a>에서 Hubs 소스 코드를 사용할 수 있습니다.",
-  "exited-room-screen.home-button" : "Back to Home",
+  "exited-room-screen.home-button" : "홈으로 돌아가기",
   "exited-room-screen.connect-tcp" : "<a>TCP를 통해 연결</a>을 시도할 수 있습니다.",
   "exited-room-screen.create-room" : "야! 너두 할 수 있어~ <a>방 새로 만들기</a>.",
-  "exited-room-screen.refresh-page-button" : "새로고침"
+  "exited-room-screen.refresh-page-button" : "새로고침",
+
+  "loading-screen.default" : "scene 불러오는 중...",
+  "loading-screen.loading-objects" : "objects 불러오는 중 {loadedCount}/{objectCount}",
+  "loading-screen.entering-room" : "방에 입장하는 중...",
+
+  "loading-screen.heading.tip" : "꿀팁 :",
+  "loading-screen.message.keyboard-controls" : "Q(left) & E(right) 키를 사용하여 회전을 할 수 있습니다!",
+  "loading-screen.heading.whats-new" : "새 소식",
+  "loading-screen.message.whats-new" : "새 소식을 확인하러 가시겠습니까? <a>바로 가기</a>"
+
 }
   

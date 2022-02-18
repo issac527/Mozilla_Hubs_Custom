@@ -6,8 +6,8 @@ import { ReactComponent as CameraIcon } from "../icons/Camera.svg";
 // import { ReactComponent as LinkIcon } from "../icons/Link.svg";
 import { ReactComponent as GIFIcon } from "../icons/GIF.svg";
 import { ReactComponent as ObjectIcon } from "../icons/Object.svg";
-import { ReactComponent as AvatarIcon } from "../icons/Avatar.svg";
-import { ReactComponent as SceneIcon } from "../icons/Scene.svg";
+// import { ReactComponent as AvatarIcon } from "../icons/Avatar.svg";
+// import { ReactComponent as SceneIcon } from "../icons/Scene.svg";
 import { ReactComponent as UploadIcon } from "../icons/Upload.svg";
 import { PlacePopoverButton } from "./PlacePopover";
 import { ObjectUrlModalContainer } from "./ObjectUrlModalContainer";
@@ -28,15 +28,15 @@ export function PlacePopoverContainer({ scene, mediaSearchStore, showNonHistorie
             id: "pen",
             icon: PenIcon,
             color: "accent5",
-            label: <FormattedMessage id="place-popover.item-type.pen" defaultMessage="Pen" />,
+            label: <FormattedMessage id="place-popover.item-type.pen" defaultMessage="그리기" />,
             onSelect: () => scene.emit("penButtonPressed"),
             selected: hasActivePen
           },
           hubChannel.can("spawn_camera") && {
             id: "camera",
             icon: CameraIcon,
-            color: "accent5",
-            label: <FormattedMessage id="place-popover.item-type.camera" defaultMessage="Camera" />,
+            color: "accent1",
+            label: <FormattedMessage id="place-popover.item-type.camera" defaultMessage="카메라" />,
             onSelect: () => scene.emit("action_toggle_camera"),
             selected: hasActiveCamera
           }
@@ -62,26 +62,26 @@ export function PlacePopoverContainer({ scene, mediaSearchStore, showNonHistorie
               label: <FormattedMessage id="place-popover.item-type.model" defaultMessage="3D Model" />,
               onSelect: () => mediaSearchStore.sourceNavigate("sketchfab")
             },
-            {
-              id: "avatar",
-              icon: AvatarIcon,
-              color: "accent1",
-              label: <FormattedMessage id="place-popover.item-type.avatar" defaultMessage="Avatar" />,
-              onSelect: () => mediaSearchStore.sourceNavigate("avatars")
-            },
-            {
-              id: "scene",
-              icon: SceneIcon,
-              color: "accent1",
-              label: <FormattedMessage id="place-popover.item-type.scene" defaultMessage="Scene" />,
-              onSelect: () => mediaSearchStore.sourceNavigate("scenes")
-            },
+            // {
+            //   id: "avatar",
+            //   icon: AvatarIcon,
+            //   color: "accent1",
+            //   label: <FormattedMessage id="place-popover.item-type.avatar" defaultMessage="Avatar" />,
+            //   onSelect: () => mediaSearchStore.sourceNavigate("avatars")
+            // },
+            // {
+            //   id: "scene",
+            //   icon: SceneIcon,
+            //   color: "accent1",
+            //   label: <FormattedMessage id="place-popover.item-type.scene" defaultMessage="Scene" />,
+            //   onSelect: () => mediaSearchStore.sourceNavigate("scenes")
+            // },
             // TODO: Launch system file prompt directly
             {
               id: "upload",
               icon: UploadIcon,
               color: "accent3",
-              label: <FormattedMessage id="place-popover.item-type.upload" defaultMessage="Upload" />,
+              label: <FormattedMessage id="place-popover.item-type.upload" defaultMessage="불러오기" />,
               onSelect: () => showNonHistoriedDialog(ObjectUrlModalContainer, { scene })
             }
           ];

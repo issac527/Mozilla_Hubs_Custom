@@ -233,7 +233,7 @@ export function ChatSidebarContainer({ scene, canSpawnMessages, presences, occup
         {
           id: "chat-sidebar-container.input-placeholder.occupants",
           defaultMessage:
-            "{occupantCount, plural, one {Send message to one other...} other {Send message to {occupantCount} others...} }"
+            "{occupantCount, plural, one {메시지 보내기...} other {Send message to {occupantCount} others...} }"
         },
         { discordChannels: discordSnippet, occupantCount: occupantCount - 1 }
       );
@@ -242,7 +242,7 @@ export function ChatSidebarContainer({ scene, canSpawnMessages, presences, occup
         {
           id: "chat-sidebar-container.input-placeholder.occupants-and-bot",
           defaultMessage:
-            "{occupantCount, plural, one {Send message to one other and {discordChannels}...} other {Send message to {occupantCount} others and {discordChannels}...} }"
+            "{occupantCount, plural, one {{discordChannels}에 메시지 보내기...} other {Send message to {occupantCount} others and {discordChannels}...} }"
         },
         { discordChannels: discordSnippet, occupantCount: occupantCount - 1 }
       );

@@ -35,18 +35,18 @@ const messages = defineMessages({
   default: {
     id: "loading-screen.default",
     description: "The scene has started loading.",
-    defaultMessage: "Loading scene..."
+    defaultMessage: "scene 불러오는 중..."
   },
   loadingObjects: {
     id: "loading-screen.loading-objects",
     description: "The loading progress. How many objects have finished loading?",
-    defaultMessage: "Loading objects {loadedCount}/{objectCount}"
+    defaultMessage: "objects 불러오는 중 {loadedCount}/{objectCount}"
   },
   enteringRoom: {
     id: "loading-screen.entering-room",
     description:
       "Once the scene has finished loading, this message tells uses that they will be entering the room shortly.",
-    defaultMessage: "Entering room..."
+    defaultMessage: "방에 입장하는 중..."
   }
 });
 
