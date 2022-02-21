@@ -69,3 +69,4 @@ Hubs is licensed with the [Mozilla Public License 2.0](./LICENSE)
 
 * 한글화 진행 중
 * UserName 정규화식 수정(한글 지원)
+* Scene에서 UserName 한글 출력
