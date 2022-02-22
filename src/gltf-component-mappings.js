@@ -471,3 +471,8 @@ AFRAME.GLTFModelPlus.registerComponent(
   }
 );
 AFRAME.GLTFModelPlus.registerComponent("zone-audio-source", "zone-audio-source");
+
+// "rotate" 키가 있는 gltf 구성 요소를 가져와 AFrame 구성 요소 "rotate"에 매핑
+// 속성에 대한 수정 없이 1:1 매핑
+// 속성 매핑은 AFrame 스키마에서 정의 (speed -> speed)
+AFRAME.GLTFModelPlus.registerComponent("rotate", "rotate");
